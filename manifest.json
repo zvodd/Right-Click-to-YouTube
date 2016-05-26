@@ -1,0 +1,18 @@
+{
+    "name": "Right Click to YouTube",
+    "description": "Search for YouTube highlighted text with right click menu.",
+    "version": "1.0",
+    "permissions": ["contextMenus", "tabs"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "css": [],
+        "js": ["ytcontext.js"],
+        "run_at": "document_start",
+        "all_frames": true
+    }],
+    "icons": { "128": "icon128.png" },
+    "manifest_version": 2
+}
