@@ -14,7 +14,7 @@ function main_listener(req, sender, callback) {
 		if (typeof context_menu_item === "undefined"){
 			context_menu_item = chrome.contextMenus.create({
 				"contexts": ["selection"],
-				"title": "Search YouTube For “"+text+"”",
+				"title": "Search YouTube for “"+text+"”",
 				"onclick": searchClickHandler
 			});
 		}
